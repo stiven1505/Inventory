@@ -1,0 +1,17 @@
+# Secretos (MUY IMPORTANTE)
+.env
+
+# Java / Maven
+**/target/
+**/build/
+.mvn/
+*.jar
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
