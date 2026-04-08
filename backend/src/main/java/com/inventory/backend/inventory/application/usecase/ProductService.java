@@ -20,4 +20,23 @@ public class ProductService {
     public Product save(Product product) {
         return productRepositoryPort.save(product);
     }
+
+    public void deleteById(Long id) {
+        productRepositoryPort.deleteById(id);
+    }
+
+    public Product updateProduct(Long id, Product updatedProduct) {
+    return productRepositoryPort.findById(id)
+        .map(existingProduct -> {
+            Product productToSave = new Product(
+                id, 
+                updatedProduct.getName(), 
+                updatedProduct.getDescription(), 
+                updatedProduct.getPrice(), 
+                updatedProduct.getStock()
+            );
+            return productRepositoryPort.save(productToSave);
+        })
+        .orElseThrow(() -> new RuntimeException("Producto no encontrado con ID: " + id));
+}
 }

@@ -18,6 +18,9 @@ public class ProductPersistenceAdapter implements ProductRepositoryPort {
     @Override
     public Product save(Product product) {
         ProductEntity entity = new ProductEntity();
+        if (product.getId() != null) {
+            entity.setId(product.getId());
+        }
         entity.setName(product.getName());
         entity.setPrice(product.getPrice());
         entity.setDescription(product.getDescription());
@@ -39,6 +42,11 @@ public class ProductPersistenceAdapter implements ProductRepositoryPort {
     public Optional<Product> findById(Long id) {
         return jpaRepository.findById(id)
             .map(ent -> new Product(ent.getId(), ent.getName(), ent.getDescription(), ent.getPrice(), ent.getStock()));
+    }
+
+    @Override
+    public void deleteById(Long id) {
+        jpaRepository.deleteById(id);
     }
 
 
