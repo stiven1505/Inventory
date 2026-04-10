@@ -1,4 +1,4 @@
-package com.inventory.backend.inventory.infrastructure.security;
+package com.inventory.backend.auth.infrastructure.security;
 
 import org.springframework.stereotype.Component;
 import io.jsonwebtoken.Jwts;

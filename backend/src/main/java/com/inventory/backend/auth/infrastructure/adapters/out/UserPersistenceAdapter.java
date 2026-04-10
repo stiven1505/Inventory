@@ -1,7 +1,7 @@
-package com.inventory.backend.inventory.infrastructure.adapters.out.User;
+package com.inventory.backend.auth.infrastructure.adapters.out;
 
-import com.inventory.backend.inventory.domain.model.User;
-import com.inventory.backend.inventory.domain.ports.out.UserRepositoryPort;
+import com.inventory.backend.auth.domain.model.User;
+import com.inventory.backend.auth.domain.ports.out.UserRepositoryPort;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

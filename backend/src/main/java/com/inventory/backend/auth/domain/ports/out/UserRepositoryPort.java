@@ -1,6 +1,6 @@
-package com.inventory.backend.inventory.domain.ports.out;
+package com.inventory.backend.auth.domain.ports.out;
 
-import com.inventory.backend.inventory.domain.model.User;
+import com.inventory.backend.auth.domain.model.User;
 import java.util.Optional;
 
 public interface UserRepositoryPort {

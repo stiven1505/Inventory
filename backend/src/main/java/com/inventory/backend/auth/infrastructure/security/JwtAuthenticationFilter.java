@@ -1,4 +1,4 @@
-package com.inventory.backend.inventory.infrastructure.security;
+package com.inventory.backend.auth.infrastructure.security;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

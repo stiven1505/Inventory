@@ -1,4 +1,4 @@
-package com.inventory.backend.inventory.infrastructure.adapters.out.User;
+package com.inventory.backend.auth.infrastructure.adapters.out;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -11,7 +11,7 @@ public class UserEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-      @Column(unique = true, nullable = false)
+    @Column(unique = true, nullable = false)
     private String username;
 
     @Column(nullable = false)

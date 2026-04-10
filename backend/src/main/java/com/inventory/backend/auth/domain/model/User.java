@@ -1,9 +1,8 @@
-package com.inventory.backend.inventory.domain.model;
+package com.inventory.backend.auth.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
 
 @Data
 @AllArgsConstructor
