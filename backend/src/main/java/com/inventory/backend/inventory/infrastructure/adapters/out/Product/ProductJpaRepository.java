@@ -1,4 +1,4 @@
-package com.inventory.backend.inventory.infrastructure.adapters.out;
+package com.inventory.backend.inventory.infrastructure.adapters.out.Product;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,7 +1,8 @@
-package com.inventory.backend.inventory.infrastructure.adapters.out;
+package com.inventory.backend.inventory.infrastructure.adapters.out.Product;
 
 import com.inventory.backend.inventory.domain.model.Product;
 import com.inventory.backend.inventory.domain.ports.out.ProductRepositoryPort;
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 

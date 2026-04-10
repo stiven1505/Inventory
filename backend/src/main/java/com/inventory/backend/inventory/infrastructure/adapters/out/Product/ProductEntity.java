@@ -1,4 +1,4 @@
-package com.inventory.backend.inventory.infrastructure.adapters.out;
+package com.inventory.backend.inventory.infrastructure.adapters.out.Product;
 
 import jakarta.persistence.*;
 import lombok.Data;
